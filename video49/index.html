@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS object fit and object cover</title>
+    <style>
+        .container{
+            height: 466px;
+            width: 488px;
+            background-color: rgb(102, 207, 172);
+            border: 2px solid black;
+            background-image: url("download.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            
+        }
+        img{
+            width: 488px;
+            height: 466px;
+            object-fit: contain;
+            /* object-fit: cover; */
+            /* object-position: bottom right; */
+            /* object-position: 10px 20px; */
+            /* object-fit: fill; */
+            /* object-fit: scale-down; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="download.jpg" alt=""> -->
+    </div>
+</body>
+</html>

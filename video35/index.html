@@ -1,0 +1,59 @@
+<!-- selector -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on CSS selector</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        }
+        .box::first-line{
+            color: brown;
+        } */
+        /* .boxes *{
+            color: blue;
+            border: 2px solid red;
+        }
+        p,a,.box,[data-color="primary"]{
+            margin-top: 45px;
+            padding-top: 45px;
+        } */
+        /* .box:nth-child(even){
+            background-color: aqua;
+        } */
+        /* .box:nth-last-child(2){
+            background-color: forestgreen;
+        } */
+        .boxes::before{
+            content: 'shwetangi is good';
+            color: aquamarine;
+        }
+        .boxes::after{ 
+            content: "shwetangi is bad ";
+            color: blueviolet;
+        }
+        ::selection{
+            color: palegreen;
+            background-color: black;
+        }
+        .box::first-letter{
+            color: peru;
+            font-size: large;
+        }
+        input::placeholder{
+            color: aquamarine;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey i m a girl</div>
+        <div class="box">Hey i m a girl</div>
+        <div class="box">Hey i m a girl</div>
+        <input type="text" placeholder="Type your name here ">
+    </div>
+</body>
+</html>

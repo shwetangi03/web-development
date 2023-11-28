@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS animation</title>
+    <style>
+        .container{
+            background-color: rgb(9, 109, 109);
+            height: 80vh;
+            width: 30vw;
+        }
+        .box{
+            background-color: aqua;
+            height: 45px;
+            width: 34px;
+            /* animation-name: shwetangiKaAnimation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.42, 0, 0, 1.22);
+            animation-delay: 1s;
+            animation-direction: alternate-reverse;
+            animation-play-state: paused; */
+            animation: shwetangiKaAnimation 2s ease-in-out 3s 1,
+                       shwetangi2 3s ease-in-out 3s 1;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+        }
+        @keyframes shwetangiKaAnimation{
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+            }
+        }
+        @keyframes shwetangi2{
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(250deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(320deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>

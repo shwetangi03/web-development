@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav using flex</title>
+    <style>
+        .container{
+            display: flex;
+            height: 95vh;
+            width: 95vw;
+            border: 2px solid red;
+            flex-direction: row-reverse;
+            /* justify-content: space-between; */
+            /* align-items: center; */
+        }
+        .items{
+            height: 23px;
+            width: 63px;
+            /* border: 2px solid red; */
+            margin: 4px;
+
+            
+        }
+        .right-element{
+            padding-right: 900px;
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <img src="download.png" alt="Error" height="20px">
+            <div class="items">Pricing</div>
+            <div class="items">about Us</div>
+            <div class="items">Resources</div>
+            <div class="items">Products</div>
+            <div class="items right-element">UltraEdit</div>
+            <img src="download (1).png" alt="Error" height="20px">
+        </div>
+    </main>
+</body>
+</html>
